@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="haha.js"></script>
+</head>
+
+<body>
+<div id="main"></div>
+</body>
+<script>
+    function $(sel) {
+        return document.querySelector(sel)
+    }
+
+    var latexUrl = "http://latex.codecogs.com/svg.latex?"
+    for (var i = 0; i < data.length; i++) {
+        var it = data[i]
+        var div = document.createElement("div")
+        if(!it.title)console.log(it)
+        div.innerHTML = (it.title?it.title+" : ":"") +it.formula+"<br><br><img src='" + latexUrl + it.formula + "'><hr>"
+        $("#main").appendChild(div)
+    }
+</script>
+</html>
