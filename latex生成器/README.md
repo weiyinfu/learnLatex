@@ -1,1 +1,0 @@
-http://latex.codecogs.com/eqneditor/editor.php

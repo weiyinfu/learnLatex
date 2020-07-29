@@ -4,3 +4,6 @@ haha.py，输入文本文件，生成一个HTML文件，通过URL请求latex图�
 
 TODO：
 编写latex OJ，给出目标样式，让用户输入latex公式代码
+
+
+http://latex.codecogs.com/eqneditor/editor.php

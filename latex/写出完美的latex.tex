@@ -1,0 +1,22 @@
+\documentclass{article}
+\begin{document}
+输入完美的Tex公式
+##间距。
+间距为quad，一个quad包含6个thinspace，`\,`表示+1个thinspace，`\!`表示-1个thinspace。
+例如，`\sum_{p\rm\;prime}f(p) = \int_{t>1}f(t)d\pi(t).`，$f(t)$和$d\pi(t)$之间的距离应该大一点。
+$$\sum_{p\rm\;prime}f(p) = \int_{t>1}f(t)d\pi(t).$$
+例如，`\int\!\!\!\int_D dx\,dy`，两个积分号之间距离应该小一点。
+$$\int\!\!\!\int_D dx\,dy$$
+
+##使用分解符
+`\left|-x\right|=\left|+x\right|`，单纯写成|-x会使程序以为|和x都是操作数，`-`是操作符，造成`-`和前后两个操作数之间距离较大。
+$\left|-x\right|=\left|+x\right|$
+
+##不同的省略号
+通常应该把 `\cdots` 用在 +,-,= 这类“高脚符号”之间，而把 `\ldots` 用在逗号这样的“矮子” 符号之间。不幸的是我发现很多书籍错用了这两种符号，或者是因为 它的作者使用的程序无法区分这两种符号。
+`x_1+x_2+\cdots+x_n$\quad and \quad $x_1,\ldots, x_n`
+$x_1+x_2+\cdots+x_n$\quad and \quad $x_1,\ldots, x_n$
+`x_1+x_2+\ldots+x_n$\quad and \quad $x_1,\cdots, x_n`
+$x_1+x_2+\ldots+x_n$\quad and \quad $x_1,\cdots, x_n$
+
+\end{document}
